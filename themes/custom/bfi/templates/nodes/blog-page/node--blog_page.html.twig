@@ -1,0 +1,30 @@
+{{ attach_library('bfi/annual-report-page-styling') }}
+
+{% include directory ~ '/templates/includes/header.html.twig' %}
+
+{{ content.field_hero }}
+
+<section class="container" id="body">
+	<div class="row">
+		<div class="col-md-12">
+			{{ content.body }}
+		</div>
+	</div>
+</section>
+
+<div class="container" id="blogs-container">
+	<div class="row">
+		{{ drupal_view('blogs', 'block_1') }}
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+    $('.report').appendTo('#reports .row');
+    $('.report').on('click', function() {
+    	$('#pdf-container iframe').attr('src', $(this).data('embed'));
+    })
+	});
+</script>
+
+{% include directory ~ '/templates/includes/footer.html.twig' %}

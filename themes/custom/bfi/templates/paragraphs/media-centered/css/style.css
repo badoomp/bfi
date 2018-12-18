@@ -1,0 +1,7 @@
+.media-centered .image, .media-centered .video-responsive {
+	margin-top: 20px;
+}
+
+.media-centered .video-container {
+	filter: drop-shadow(-10px 10px 10px #333);
+}

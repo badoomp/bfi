@@ -1,0 +1,37 @@
+{{ attach_library('bfi/blog-post-styling') }}
+
+{% include directory ~ '/templates/includes/header.html.twig' %}
+
+<div class="blog-post">
+<div class="hero-banner">
+<div class="row">
+	<div class="col-md-5 featured-title-container text-center">
+	<div class="featured-title">
+		<h1>{{ node.title.value }}</h1>
+	</div>
+	</div>
+	<div class="col-md-7 featured-image" style="background-image: url({{ content.field_featured_image.0 }})">
+	</div>
+	</div>
+	<div class="bfi-border-bottom"></div>
+	<div class="corner-logo"  data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500">
+		<img alt="Burundi Friends International" src="http://bufri.org/wp-content/uploads/2016/06/BFI-Hands-No-Pad.jpg">
+	</div>
+</div>
+
+
+
+<div class="container blog-content">
+<div class="row">
+	<div class="col-md-9 blog-body">
+	{{ content.body }}
+	</div>
+	<div class="col-md-3 more-blogs">
+	<h3>Learn more</h3>
+		{{ drupal_view('blogs', 'block_1') }}
+	</div>
+</div>
+</div>
+</div>
+
+{% include directory ~ '/templates/includes/footer.html.twig' %}

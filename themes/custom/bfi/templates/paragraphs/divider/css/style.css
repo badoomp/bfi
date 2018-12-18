@@ -1,0 +1,17 @@
+.divider {
+	width: 250px;
+	margin: 10px auto;
+	background:
+     linear-gradient(
+       135deg,
+       #fff 0%,
+       #fff 3%,
+       #63A015 3%, 
+       #63A015 33.3%,
+       #F9DE7A 33.3%, 
+       #F9DE7A 66.6%, 
+       #C0291D 66.6%, 
+       #C0291D 97%,
+       #fff 97%)no-repeat;
+   padding-top:5px;
+}

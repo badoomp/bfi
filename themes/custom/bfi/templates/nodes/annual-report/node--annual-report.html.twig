@@ -1,0 +1,37 @@
+{{ attach_library('bfi/annual-report-page-styling') }}
+
+{% include directory ~ '/templates/includes/header.html.twig' %}
+
+{{ content.field_hero }}
+
+<section class="container" id="body">
+	<div class="row">
+		<div class="col-md-12">
+			{{ content.body }}
+		</div>
+	</div>
+</section>
+
+<div class="container-fluid" id="reports">
+	<div class="container">
+		<div class="row">
+		{{ content.field_sections }}
+		</div>
+	</div>
+</div>
+<div class="container-fluid" id="pdf-container">
+	<div class="row">
+		<iframe src="http://bufri.org/wp-content/uploads/2018/04/Burundi_Annual-Report-2017_Web.pdf" frameborder="0"></iframe>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+    $('.report').appendTo('#reports .row');
+    $('.report').on('click', function() {
+    	$('#pdf-container iframe').attr('src', $(this).data('embed'));
+    })
+	});
+</script>
+
+{% include directory ~ '/templates/includes/footer.html.twig' %}

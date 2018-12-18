@@ -1,0 +1,13 @@
+name: BFI
+type: theme
+description: Theme for BFI
+package: Custom
+core: 8.x
+
+dependencies:
+  - core/drupal
+  - core/jquery
+
+libraries:
+  - bfi/global-styling
+  - bfi/global-scripts

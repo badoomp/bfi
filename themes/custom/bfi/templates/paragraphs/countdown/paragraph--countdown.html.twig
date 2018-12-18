@@ -1,0 +1,47 @@
+{{ attach_library('bfi/countdown-styling') }}
+
+<section class="container countdown">
+	{% if content.field_header.0 != "" %}
+	<div class="row">
+		<div class="col-md-8 col-md-push-2 header text-center">
+			{{ content.field_header.0 }}
+		</div>
+	</div>
+	{% endif %}
+
+	{% if content.field_countdown_date.0 != "" %}
+	<div class="row" data-aos="fade-left" data-aos-duration="1500">
+		<div class="col-md-8 col-md-push-2 countdown">
+			<div id="bfi-countdown"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+		  jQuery("#bfi-countdown").countdown("{{ content.field_countdown_date.0 }}", function(event) {
+		    jQuery(this).text(
+		      event.strftime('%-D days %-Hh %Mm %Ss')
+		    );
+		  });
+		});
+	</script>
+	{% endif %}
+
+	{% if content.field_description.0 != "" %}
+	<div class="row">
+		<div class="col-md-8 col-md-push-2 description">
+			{{ content.field_description.0 }}
+		</div>
+	</div>
+	{% endif %}
+
+
+	{% if content.field_button[0]['#title'] != "" %}
+	<div class="row">
+		<div class="col-md-8 col-md-push-2 button">
+			<a href="{{content.field_button[0]['#url']}}">
+        <div class="btn btn-green">{{content.field_button[0]['#title']}}</div>
+      </a>
+		</div>
+	</div>
+	{% endif %}
+</section>

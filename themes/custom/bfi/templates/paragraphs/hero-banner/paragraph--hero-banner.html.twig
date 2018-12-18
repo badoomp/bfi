@@ -1,0 +1,18 @@
+{{ attach_library('bfi/hero-banner-styling') }}
+
+<div class="container-fluid hero-banner" style="background-image: url({{ content.field_image.0 }})">
+<div class="overlay"></div>
+<div class="corner-logo"  data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500">
+	<img alt="Burundi Friends International" src="http://bufri.org/wp-content/uploads/2016/06/BFI-Hands-No-Pad.jpg">
+</div>
+	<div class="row">
+		<div class="col-md-12 text-center text-white">
+			<h1>{{ content.field_header.0 }}</h1>
+			{% if content.field_subheader.0 !="" %}
+			<hr style="max-width: 300px;">
+			<h3>{{ content.field_subheader.0 }}</h3>
+			{% endif %}
+		</div>
+	</div>
+<div class="bfi-border-bottom"></div>
+</div>

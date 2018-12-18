@@ -1,0 +1,83 @@
+global-styling:
+  header: true
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900: {}
+      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css: { type: external, minified: true }
+      https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css: { type: external }
+      css/style.css: {}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js: { type: external, minified: true }
+
+global-scripts:
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js: { type: external }
+    js/script.js: {}
+
+front-page-styling:
+  css:
+    theme:
+      templates/nodes/front-page/css/style.css: {}
+
+annual-report-page-styling:
+  css:
+    theme:
+      templates/nodes/annual-report/css/style.css: {}
+
+blog-post-styling:
+  css:
+    theme:
+      templates/nodes/blog-post/css/style.css: {}
+
+company-page-styling:
+  css:
+    theme:
+      templates/nodes/company-page/css/style.css: {}
+
+bfi-callout-styling:
+  css:
+    theme:
+      templates/paragraphs/bfi-callout/css/style.css: {}
+
+columns-two-with-image-styling:
+  css:
+    theme:
+      templates/paragraphs/columns-two-with-image/css/style.css: {}
+
+countdown-styling:
+  css:
+    theme:
+      templates/paragraphs/countdown/css/style.css: {}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js: { type: external, minified: true }
+
+divider-styling:
+  css:
+    theme:
+      templates/paragraphs/divider/css/style.css: {}
+
+media-centered-styling:
+  css:
+    theme:
+      templates/paragraphs/media-centered/css/style.css: {}
+
+hero-banner-styling:
+  css:
+    theme:
+      templates/paragraphs/hero-banner/css/style.css: {}
+
+text-center-row-styling:
+  css:
+    theme:
+      templates/paragraphs/text-center-row/css/style.css: {}
+
+text-left-row-styling:
+  css:
+    theme:
+      templates/paragraphs/text-left-row/css/style.css: {}
+
+team-member-row-styling:
+  css:
+    theme:
+      templates/paragraphs/team-member-row/css/style.css: {}
