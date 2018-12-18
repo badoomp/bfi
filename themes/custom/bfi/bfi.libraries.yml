@@ -81,3 +81,8 @@ team-member-row-styling:
   css:
     theme:
       templates/paragraphs/team-member-row/css/style.css: {}
+
+title-simple-styling:
+  css:
+    theme:
+      templates/paragraphs/title-simple/css/style.css: {}
