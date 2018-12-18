@@ -26,7 +26,15 @@ p { font-size: 18px; }
    flex-direction: column;
 }
 
-section { padding-top: 50px; padding-bottom: 50px; }
+@media screen and (max-width:768px) {
+  .row.flex, 
+  .row.flex div[class^='col-md-'], 
+  div[class*=' col-md-'] { 
+    display: block; 
+  }
+}
+
+section { padding-top: 50px; padding-bottom: 50px; overflow: hidden; }
 
 /* Header & Nav */
 #bfi-header { 
@@ -134,7 +142,7 @@ section { padding-top: 50px; padding-bottom: 50px; }
        #F9DE7A 33.3%, 
        #F9DE7A 66.6%, 
        #C0291D 66.6%, 
-       #C0291D )no-repeat;
+       )no-repeat;
    padding-top:10px;
    width: 100%;
    position: absolute;
@@ -148,6 +156,11 @@ section { padding-top: 50px; padding-bottom: 50px; }
 	border-width: 2px;
 	transition-duration: .3s;
 	padding: 8px 20px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  transform: skew(-15deg);
 }
 
 .btn-green {
@@ -160,6 +173,7 @@ section { padding-top: 50px; padding-bottom: 50px; }
 	color: #63A015;
 	background-color: #fff;
 	border-color: #63A015;
+  box-shadow: inset 2px 2px 0px #F9DE7A, -2px 0px 0px #C0291D;
 }
 
 /* Footer */
