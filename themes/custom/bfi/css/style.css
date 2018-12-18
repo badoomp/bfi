@@ -173,7 +173,10 @@ section { padding-top: 50px; padding-bottom: 50px; overflow: hidden; }
 	color: #63A015;
 	background-color: #fff;
 	border-color: #63A015;
-  box-shadow: inset 2px 2px 0px #F9DE7A, -2px 0px 0px #C0291D;
+  border-left-color: #F9DE7A;
+  border-left-width: 5px;
+  box-shadow: inset 8px 0px 0px #C0291D, -10px 0px 0px #63A015;
+  padding-right: 25px;
 }
 
 /* Footer */
