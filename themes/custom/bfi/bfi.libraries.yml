@@ -5,9 +5,11 @@ global-styling:
       https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900: {}
       https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css: { type: external, minified: true }
       https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }
       css/style.css: {}
   js:
     https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js: { type: external, minified: true }
+    https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js: { type: external, minified: true }
     https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js: { type: external, minified: true }
 
 global-scripts:
@@ -30,6 +32,13 @@ blog-post-styling:
     theme:
       templates/nodes/blog-post/css/style.css: {}
 
+blog-menu-styling:
+  css:
+    theme:
+      templates/paragraphs/blog-menu/css/style.css: {}
+  js:
+    templates/paragraphs/blog-menu/js/script.js: {}
+
 company-page-styling:
   css:
     theme:
@@ -44,6 +53,16 @@ columns-two-with-image-styling:
   css:
     theme:
       templates/paragraphs/columns-two-with-image/css/style.css: {}
+
+columns-two-with-video-styling:
+  css:
+    theme:
+      templates/paragraphs/columns-two-with-video/css/style.css: {}
+
+full-background-columns-two-styling:
+  css:
+    theme:
+      templates/paragraphs/full-background-columns-two/css/style.css: {}
 
 countdown-styling:
   css:

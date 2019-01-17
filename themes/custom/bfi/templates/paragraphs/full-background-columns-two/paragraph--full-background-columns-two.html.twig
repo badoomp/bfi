@@ -1,0 +1,52 @@
+{{ attach_library('bfi/full-background-columns-two-styling') }}
+
+
+<section class="container-fluid full-background-columns-two"{% if content.field_background_image.0 != "" %} style="background-image: url({{ content.field_background_image.0 }})"{% endif %}>
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row flex">
+			<div class="col-sm-6 text-white text-center">
+		    <div class="text-container">
+	        {% if content.field_header.0 != "" %}
+					<div class="header">
+						{{ content.field_header.0 }}
+					</div>
+					{% endif %}
+					{% if content.field_description.0 != "" %}
+						<div class="description">
+							{{ content.field_description.0 }}
+						</div>
+					{% endif %}
+					{% if content.field_button[0]['#title'] != "" %}
+						<div class="button">
+							<a href="{{content.field_button[0]['#url']}}" target="{{content.field_target_1.0}}">
+				        <div class="btn btn-green">{{content.field_button[0]['#title']}}</div>
+				      </a>
+						</div>
+					{% endif %}
+	       </div>
+	    </div>
+	    <div class="col-sm-6 text-white text-center">
+	      <div class="text-container">
+	        {% if content.field_header_2.0 != "" %}
+					<div class="header">
+						{{ content.field_header_2.0 }}
+					</div>
+					{% endif %}
+					{% if content.field_description_2.0 != "" %}
+						<div class="description">
+							{{ content.field_description_2.0 }}
+						</div>
+					{% endif %}
+					{% if content.field_button_2[0]['#title'] != "" %}
+						<div class="button">
+							<a href="{{content.field_button_2[0]['#url']}}" target="{{content.field_target_2.0}}">
+				        <div class="btn btn-green">{{content.field_button_2[0]['#title']}}</div>
+				      </a>
+						</div>
+					{% endif %}
+	      </div>
+	    </div>
+		</div>
+	</div>
+</section>

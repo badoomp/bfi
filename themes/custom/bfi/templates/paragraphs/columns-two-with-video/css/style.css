@@ -1,0 +1,36 @@
+.columns-two-with-image {
+	padding: 30px 15px;
+}
+
+.columns-two-with-image .header {
+	font-size: 30px;
+	width: 100%;
+}
+
+.columns-two-with-image .image img {
+	width: 100%;
+	height: auto;
+}
+
+.columns-two-with-image .text-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.columns-two-with-image .text-container.flipped {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .columns-two-with-image .image img {
+    max-width: 450px;
+    height: auto;
+  }
+  .columns-two-with-image .image {
+    text-align: center;
+  }
+}

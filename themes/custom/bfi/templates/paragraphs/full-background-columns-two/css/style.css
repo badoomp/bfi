@@ -1,0 +1,32 @@
+.full-background-columns-two {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.full-background-columns-two .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.full-background-columns-two .button {
+  margin-top: 20px;
+}
+
+.full-background-columns-two .col-sm-6 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .full-background-columns-two .col-sm-6:first-child {
+    border-right: 1px solid #fff;
+  }
+}

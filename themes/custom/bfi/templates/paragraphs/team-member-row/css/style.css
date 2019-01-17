@@ -15,6 +15,10 @@
 	font-weight: bold;
 }
 
+.team-member-row .row .col-sm-9 {
+   align-items: flex-start;
+}
+
 @media screen and (max-width:768px) {
   .team-member-row {
   	padding: 30px;

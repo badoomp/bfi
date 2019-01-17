@@ -1,0 +1,29 @@
+{{ attach_library('bfi/columns-two-with-video-styling') }}
+
+{% set videoLocation = content.field_image_position['#items'].getString() %}
+
+<section class="container columns-two-with-video">
+	<div class="row flex">
+		<div class="col-sm-6 col-md-5 col-lg-5{% if videoLocation =="right" %} col-sm-push-6 col-md-push-7 col-lg-push-7{% endif %}">
+      {% if content.field_video_id.0 !="" %}
+      <div class="video-responsive"{% if videoLocation =="right" %} data-aos="fade-left"{% else %}  data-aos="fade-right"{% endif %}>
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/{{ content.field_video_id.0 }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {% endif %}
+    </div>
+    <div class="col-sm-6 col-md-7 col-lg-7 {% if videoLocation =="right" %} col-sm-pull-6 col-md-pull-5 col-lg-pull-5{% endif %}">
+      <div class="text-container{% if videoLocation =="right" %} flipped{% endif %}">
+        {% if content.field_header.0 != "" %}
+		<div class="header">
+			{{ content.field_header.0 }}
+		</div>
+	{% endif %}
+	{% if content.field_description.0 != "" %}
+		<div class="description">
+			{{ content.field_description.0 }}
+		</div>
+	{% endif %}
+      </div>
+    </div>
+	</div>
+</section>
