@@ -42,12 +42,26 @@
 
 .blog-body { padding-left: 30px; padding-right: 30px; border-right: 1px solid #ddd; }
 
-.blog-body img[align="right"] {
-	margin-left: 20px;
-	margin-bottom: 20px;
+
+.blog-body img {
+  max-width: 90%;
+  margin: 10px 5%;
 }
 
-.blog-body img[align="left"] {
-	margin-right: 20px;
+.blog-body img[align="right"], .blog-body img.align-right {
+/*	margin-left: 20px;
 	margin-bottom: 20px;
+  margin-right: 0;
+  margin-top: 0;*/
+  margin: 0 0 20px 20px;
+  max-width: 300px;
+}
+
+.blog-body img[align="left"], .blog-body img.align-left {
+/*	margin-right: 20px;
+	margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 0;*/
+  margin: 0 20px 20px 0;
+  max-width: 300px;
 }
